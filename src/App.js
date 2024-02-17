@@ -1,21 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './Components/Footer.jsx';
+import Header from './Components/Header.jsx';
+import HeroPage from './Components/HeroPage.jsx';
+import ServicePage from './Components/ServicePage.jsx';
+import About from './Components/About.jsx';
+import ServiceAll from './Components/ServiceAll.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Header/>
+        <HeroPage/>
+        <ServiceAll/>
+        <About/>
+        <Footer/>
     </div>
   );
 }

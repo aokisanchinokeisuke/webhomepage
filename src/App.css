@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+
+.slideBar{
+  width: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logoImage{
+  width: fit-content;
+  height: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cardService{
+  min-width: 400px;
+  margin: 5px 30px;
+  min-height: 360px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.serviceShow{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 27px;
+  grid-row-gap: 0px;
+}
+
+.gridCard{
+  grid-row: span 2;
+}
+
+.serviceName{
+  margin-left: 30px;
+  /* min-width: 400px;
+  min-height: 360px; */
+}
+
+.serviceButton{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonServiceElement{
 }
